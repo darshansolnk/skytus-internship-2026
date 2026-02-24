@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-card {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: 0.3s;
+}
+
+.user-card.active {
+  background-color: #e6f9f0;
+  border-color: #1cc88a;
+}
+
+.user-card.inactive {
+  background-color: #ffe6e6;
+  border-color: #e74a3b;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.toggle-btn {
+  background-color: #4e73df;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #e74a3b;
+  color: white;
+}
+
+.no-users {
+  text-align: center;
+  color: gray;
+  margin-top: 15px;
+}
