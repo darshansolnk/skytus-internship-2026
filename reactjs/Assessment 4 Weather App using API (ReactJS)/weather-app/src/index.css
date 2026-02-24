@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+#root {
+  width: 100%;
+}
+
+/* App Wrapper */
+.app-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Search Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input Box */
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0077ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #e6f0ff;
+}
+
+/* Weather Card */
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card h2 {
+  font-size: 28px;
+}
+
+.card h3 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Loader */
+.loader {
+  margin-top: 20px;
+  font-size: 18px;
+  animation: pulse 1s infinite;
+}
+
+/* Error */
+.error {
+  margin-top: 20px;
+  color: #ffd6d6;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
